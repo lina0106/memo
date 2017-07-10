@@ -1,0 +1,35 @@
+//start
+git clone <blank repo>
+
+//start local to remote
+echo "# memo" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/lina0106/memo.git
+git push -u origin master
+
+
+//onstage changed ALL files
+git add -A
+
+//rollback before commit(ALL FILES)
+git checkout -- .
+
+//commit
+git commit
+
+
+//git push (for remote)
+git push
+
+//revert (written history)
+git revert HEAD~5..HEAD
+git commit -m "msg"
+
+//reset (removed historys. force push)
+git reset HEAD~5
+git push -f
+
+//change or make branch
+git checkout <branch_name>
